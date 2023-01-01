@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link rel="icon" href="https://i.imgur.com/Whx3l4V.png">
+    <title>WB Alpha T&Cs</title>
+        <meta
+            name="viewport"
+            content="width=device-width,
+        minimum-scale=1,initial-scale=1"
+        />
+
+        <style type="text/css">
+            body {
+                
+                margin: 0;
+  font-family: 'Roboto', sans-serif;            }
+
+            #background-div {
+                background: linear-gradient(-45deg, #000000, #000000, #001358, #000000, #000000, #000000);
+                background-size: 400% 400%;
+                -webkit-animation: gradientBG 60s ease infinite;
+                animation: gradientBG 60s ease infinite;
+                position: absolute;
+                z-index: -2;
+                width: 100%;
+                height: 100%;
+                
+                
+            }
+
+            @-webkit-keyframes gradientBG {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+            @keyframes gradientBG {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+            #bg {
+                position: absolute;
+                z-index: 99;
+                opacity: 0.2;
+                left: 40%;
+                top: 25%;
+                
+            }
+
+            #menu-bar {
+                z-index: 99;
+
+                margin: 0;
+                position: fixed;
+                padding-right: 5px;
+                width: 90px;
+                height: 100%;
+                border-right: 4px solid #0047ff;
+                box-shadow: 15px 0px 20px -20px white;
+            }
+
+            .menu-item {
+                width: 75px;
+                padding-left: 10px;
+                padding-bottom: 5px;
+                filter: drop-shadow(0px -1px 2px white);
+            }
+
+            .locked {
+                filter: brightness(30%);
+                cursor: not-allowed;
+                pointer-events: none;
+            }
+            .skills-container{
+                margin-left:90px;
+                height: 100%;
+                
+               
+            }
+            
+            
+            #start-node{
+                width: 150px;
+                height: 70px;
+                margin-top:165px;
+                margin-left: 27px;
+                border-radius: 50px 50px 50px 50px;
+                box-shadow: 0px 0px 5px 2px grey;
+                border: 3px solid rgba(3,99,247,255);
+                background-color:black;
+            }
+
+            .node {
+                
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                box-shadow: 0px 0px 5px 2px grey;
+                border: 3px solid rgba(3,99,247,255);
+                background-color:black;
+                color:white;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: -20px;
+                
+                
+            }
+            .c1 {
+                margin-top: 155px;
+                margin-left: -60px;          
+                height:40px;
+                width: 10px;
+                box-shadow: 1px 0px 0px 0px grey;
+                border-right: 3px solid rgba(3,99,247,255);
+                transform: rotate(90deg);    
+                margin-right: -5px;  
+                        
+            }
+            .c2{
+                margin-top: 115px;
+                margin-left: -60px;          
+                height:40px;
+                width: 10px;
+                box-shadow: 1.7px 0px 0px 0px grey;
+                border-right: 3px solid rgba(3,99,247,255);
+                transform: rotate(90deg);    
+                margin-right: -5px;  
+                -moz-transform: skew(-45deg);
+                -webkit-transform: skew(-45deg);
+                transform: skew(-45deg);
+            }
+            .c3{
+                margin-top: 115px;
+                margin-left: -60px;          
+                height:40px;
+                width: 10px;
+                box-shadow: 1.7px 0px 0px 0px grey;
+                border-right: 3px solid rgba(3,99,247,255);
+                transform: rotate(90deg);    
+                margin-right: -5px;  
+                -moz-transform: skew(45deg);
+                -webkit-transform: skew(45deg);
+                transform: skew(45deg);
+            }
+
+            .column{
+                display:flex;
+                flex-direction: column;
+            }
+            .row{
+                display: flex;
+            }
+            .title{
+                color:white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="background-div">
+            <div style="border: 0px solid blue; cursor: pointer; background: black;">
+    <style type="text/css">
+               .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip:hover:after {
+  content: attr(title);
+  position: absolute;
+  top: 30%;
+  left: 150%;
+  transform: translate(-30%, 1px);
+  white-space: nowrap;
+  border: 2px solid #0047FF;  
+            border-radius: 200px;
+            box-shadow: 0px 0px 3px white;
+  padding: 5px 10px;
+  font-size: 14px;
+  z-index: 20;
+  color: white;
+  background-color: black;
+}
+.tooltip:not(:hover):after {
+  display: none;
+}
+
+    .tooltipp {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltipp:hover:after {
+  content: attr(title);
+  position: absolute;
+  top: 30%;
+  left: 170%;
+  transform: translate(-30%, 1px);
+  white-space: nowrap;
+  border: 2px solid #0047FF;  
+            border-radius: 200px;
+            box-shadow: 0px 0px 3px white;
+  padding: 5px 10px;
+  font-size: 14px;
+  z-index: 20;
+  color: white;
+  background-color: black;
+}
+.tooltipp:not(:hover):after {
+  display: none;
+}
+
+
+    .tooltippp {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltippp:hover:after {
+  content: attr(title);
+  position: absolute;
+  top: 30%;
+  left: 190%;
+  transform: translate(-30%, 1px);
+  white-space: nowrap;
+  border: 2px solid #0047FF;  
+            border-radius: 200px;
+            box-shadow: 0px 0px 3px white;
+  padding: 5px 10px;
+  font-size: 14px;
+  z-index: 20;
+  color: white;
+  background-color: black;
+}
+.tooltippp:not(:hover):after {
+  display: none;
+}</style>
+                <nav id="menu-bar" style="background:black;">
+                    <div id="manu-inner">
+                        <div>
+<a href="dashboard.php" class=""><span title="Home" class="tooltip"><img style="margin-top: 1%; " class="menu-item" src="https://i.imgur.com/Whx3l4V.png"/></span></a>
+                        </div>
+                        <div>
+<a href="academy" class=""><span title="Academy" class="tooltip"><img class="menu-item" src="https://i.imgur.com/G934PrP.png"/></span></a>
+                        </div>
+                        <div>
+<a href="community" class=""><span title="Community" class="tooltip"><img class="menu-item" src="https://i.imgur.com/oa8f1zL.png"/></span></a>
+                        </div>
+                        <div>
+<a href="tim"><span title="Top Insights Module" class="tooltipp"><img class="menu-item" src="https://i.imgur.com/ie2txpz.png"/></span></a>
+                        </div>
+                        <div>
+<a href="tam" class=""><span title="Technical Analysis Module" class="tooltippp"><img class="menu-item" src="https://i.imgur.com/Ci7sOjx.png"/></span></a>
+                        </div>
+                        <div>
+<span href="" class="locked"><span title="TEM (Coming soon)" class="tooltip"><img class="menu-item" src="https://i.imgur.com/DZgXupp.png"/></span></span>
+                        </div>
+                        <div>
+<span href="" class="locked"><span title="TOM (Coming soon)" class="tooltip"><img class="menu-item" src="https://i.imgur.com/rAmAVYV.png"/></span></span>
+                        </div>
+                        <div>
+<a href="" class="locked"><span title="Terminal (Coming soon)" class="tooltip"><img class="menu-item" src="https://i.imgur.com/l35TMoK.png"/></span></a>
+                        </div>
+                        <div>
+<a href="" class="locked"><span title="Portfolio (Coming soon)" class="tooltip"><img class="menu-item" src="https://i.imgur.com/8JUpDPh.png"/></span></a>
+                        </div>
+                        
+                    </div>
+                </nav>
+            </div>
+            <div style="border-radius: 400px; position: fixed; width: 80%; height: 100px;top: 0px; left: 100px;  position: fixed;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%); color: white;">
+                <p style="text-align: center; color:white">
+                    <div style="position: fixed; padding: 15px;
+border: 2px solid #0047FF;  
+            border-radius: 20px;background-color: black;
+            box-shadow: 0px 0px 3px white; font-size: 20pt;
+"><strong>Terms and Conditions for WillBear.io</strong></div>
+<div style=" border: 2px solid #0047FF;  
+            border-radius: 20px;margin-top: 100px;box-shadow: 0px 0px 3px white;width: 800px;padding: 15px; text-align:center;margin-top: 100px;background-color: black;"><strong><em>I dislike the fact that large tech companies make you sign 50-page documents signing all your rights away in order to use their sites. We ensure to keep our T&Cs simple and understandable.</em> </strong></div>
+
+<div style=" border: 2px solid #0047FF;  
+            border-radius: 20px;margin-top: 20px;box-shadow: 0px 0px 3px white;width: 100px;padding: 15px; margin-top: 20px;background-color: black;"><strong>Introduction</strong></div>
+<div style=" border: 2px solid #0047FF;  background-color: black;
+            border-radius: 20px;margin-top: 20px;box-shadow: 0px 0px 3px white;width: 800px;padding: 15px;">Welcome to WillBear.io (the "Website"). By accessing or using the Website, you agree to be bound by these terms and conditions (the "Terms and Conditions"). If you do not agree to all of the Terms and Conditions, please do not use the Website.</div>
+
+<div style=" border: 2px solid #0047FF;  
+            border-radius: 20px;margin-top: 20px;box-shadow: 0px 0px 3px white;width: 150px;padding: 15px; margin-top: 20px;background-color: black;"><strong>Use of the Website</strong></div>
+<div style=" border: 2px solid #0047FF;  background-color: black;
+            border-radius: 20px;margin-top: 20px;box-shadow: 0px 0px 3px white;width: 800px;padding: 15px;">The Website is intended for informational and educational purposes only. The content provided on the Website is not intended to be, and should not be considered as, financial or investment advice. You should always seek the advice of a qualified financial advisor before making any financial decisions.</div>
+
+<div style="border: 2px solid #0047FF;  
+            border-radius: 20px;margin-top: 20px;box-shadow: 0px 0px 3px white;width: 90px;padding: 15px; margin-top: 20px;background-color: black;"><strong>No Liability</strong></div>
+<div style="  border: 2px solid #0047FF;  background-color: black;
+            border-radius: 20px;margin-top: 20px;box-shadow: 0px 0px 3px white;width: 800px;padding: 15px;">WillBear.io will not be liable for any loss or damage arising from the use of the Website or the information provided on the Website. We do not guarantee the accuracy, completeness, or timeliness of the information on the Website. We are not responsible for any errors or omissions in the content of the Website.</div>
+
+<div style="border: 2px solid #0047FF;  
+            border-radius: 20px;margin-top: 20px;box-shadow: 0px 0px 3px white;width: 110px;padding: 15px; margin-top: 20px;background-color: black;"><strong>Personal Data</strong></div>
+<div style=" border: 2px solid #0047FF;  background-color: black;
+            border-radius: 20px;margin-top: 20px;box-shadow: 0px 0px 3px white;width: 800px;padding: 15px;">We collect and store personal data anonymously. You may request to have your personal data removed by contacting us on any of our social media platforms.</div>
+
+<div style=" border: 2px solid #0047FF;  
+            border-radius: 20px;margin-top: 20px;box-shadow: 0px 0px 3px white;width: 150px;padding: 15px; margin-top: 20px;background-color: black;"><strong>Dispute Resolution</strong></div>
+<div style=" border: 2px solid #0047FF;  background-color: black;
+            border-radius: 20px;margin-top: 20px;box-shadow: 0px 0px 3px white;width: 800px;padding: 15px;">Any disputes arising from the use of the Website will be resolved by referring to these Terms and Conditions. WillBear.io is not legally liable for any loss or damage resulting from the use of the Website.</div>
+
+        </div>
+    </body>
+</html>
